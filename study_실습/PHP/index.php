@@ -7,7 +7,6 @@
   </head>
   <body id="target">
       <header>
-        <img src="https://s3-ap-northeast-2.amazonaws.com/opentutorials-user-file/course/1/5641.png" alt="손">
         <h1><a href="http://localhost:8080/php.php">JavaScript</a></h1>
       </header>
       <nav>
@@ -25,10 +24,9 @@
 
       <article>
         <?php
-        if(empty($_GET['id']) == false){
-          echo file_get_contents($_GET['id'].".txt");
+        if(empty($_GET['id']) === false){
+            echo file_get_contents($_GET['id'].".txt");
         }
-
          ?>
       </article>
   </body>
